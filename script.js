@@ -40,7 +40,7 @@ function drop(e) {
   clone = e.target.cloneNode(true);
   let data = e.dataTransfer.getData("text");
   let nodelist = document.getElementById("parent").childNodes;
-  console.log(data, e.target.id);
+  // console.log(data, e.target.id);
   for (let i = 0; i < nodelist.length; i++) {
     if (nodelist[i].id == data) {
       dragindex = i;
